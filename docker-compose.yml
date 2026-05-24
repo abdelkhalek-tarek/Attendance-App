@@ -1,0 +1,24 @@
+services:
+
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASSWORD=root123
+      - DB_NAME=attendance
+
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: attendance
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
