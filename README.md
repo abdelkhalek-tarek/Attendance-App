@@ -37,3 +37,14 @@ Attendance-App/
 ```bash
 git clone https://github.com/abdelkhalek-tarek/Attendance-App.git
 cd Attendance-App 
+docker-compose up --build -d
+docker ps
+
+
+
+
+
+
+
+
+
