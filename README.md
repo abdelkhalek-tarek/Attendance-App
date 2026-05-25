@@ -21,3 +21,19 @@ The application is fully containerized to simulate a real-world deployment envir
 ---
 
 ## 📦 Project Structure
+Attendance-App/
+│
+├── app/ # Application source code
+├── Dockerfile # App container build file
+├── docker-compose.yml # Multi-container setup
+├── requirements.txt # Python dependencies
+└── README.md
+
+---
+
+## ⚙️ How to Run the Project
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/abdelkhalek-tarek/Attendance-App.git
+cd Attendance-App 
